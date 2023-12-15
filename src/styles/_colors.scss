@@ -1,0 +1,71 @@
+/** GLOBAL SCSS COLORS FOR THE MODULE*/
+$success: #00b327;
+$warning: #d87315;
+$cancel: #eb3333;
+$update: #4ca6fa;
+$classic: #bebebe;
+$primary: #ffffff; // White
+$secondary: #008fe8; // blue
+$tertiary: #dadada; // Grey
+
+// Color
+.c-primary {
+    color: $primary
+}
+
+.c-secondary {
+    color: $secondary
+}
+
+.c-tertiary {
+    color: $tertiary
+}
+
+.c-success {
+    color: $success;
+}
+
+.c-warning {
+    color: $warning
+}
+
+.c-cancel {
+    color: $cancel
+}
+
+.c-update {
+    color: $update
+}
+
+//Background color
+.bg-primary {
+    background-color: $primary
+}
+
+.bg-secondary {
+    background-color: $secondary
+}
+
+.bg-tertiary {
+    background-color: $tertiary
+}
+
+.bg-success {
+    background-color: $success;
+}
+
+.bg-warning {
+    background-color: $warning
+}
+
+.bg-cancel {
+    background-color: $cancel
+}
+
+.bg-update {
+    background-color: $update
+}
+
+.bg-classic {
+    background-color: $classic
+}

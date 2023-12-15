@@ -1,0 +1,79 @@
+/* 
+  generate font-size class from 1px to 20px
+  Utilisation Exemple : fs-1 fs-50
+
+ */
+@for $i from 1 through 30 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+/* 
+  generate padding class from 1px to 15px
+  Utilisation Exemple : pd-g-1   pd-y-50 pd-x-60
+
+ */
+@for $i from 1 through 20 {
+  .pd-g-#{$i} {
+    padding: #{$i}px;
+  }
+
+  .pd-y-#{$i} {
+    padding: #{$i}px 0px #{$i}px 0px;
+  }
+
+  .pd-x-#{$i} {
+    padding: 0px #{$i}px 0px #{$i}px;
+  }
+
+  .pd-t-#{$i} {
+    padding-top: #{$i}px;
+  }
+
+  .pd-r-#{$i} {
+    padding-right: #{$i}px;
+  }
+
+  .pd-b-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+
+  .pd-l-#{$i} {
+    padding-left: #{$i}px;
+  }
+}
+
+/* 
+  generate margin class from 1px to 15px
+  Utilisation Exemple : mg-g-1   mg-y-50 mg-x-60
+
+ */
+@for $i from 1 through 20 {
+  .mg-g-#{$i} {
+    margin: #{$i}px;
+  }
+
+  .mg-y-#{$i} {
+    margin: #{$i}px 0px #{$i}px 0px;
+  }
+
+  .mg-x-#{$i} {
+    margin: 0px #{$i}px 0px #{$i}px;
+  }
+  .mg-t-#{$i} {
+    margin-top: #{$i}px;
+  }
+
+  .mg-r-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+  .mg-b-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+
+  .mg-l-#{$i} {
+    margin-left: #{$i}px;
+  }
+}

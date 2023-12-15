@@ -1,0 +1,36 @@
+/* GLBOAL SCSS FOR DECORATION */
+
+// Add pointer
+.d-clickable {
+    cursor: pointer;
+}
+
+// Add pointer and hover
+.d-clickable-hover {
+    @extend .d-clickable;
+    &:hover {
+        background-color: rgb(219, 219, 219);
+        //border-radius: 10px;
+    }
+}
+
+.d-clickable-hover-round {
+    @extend .d-clickable-hover;
+    &:hover {
+        border-radius: 10px;
+    }
+}
+
+.d-no-overflow {
+    overflow: hidden;
+}
+
+$weight: 100, 200, 300, 400, 500, bold;
+
+// Generate weight class from $weight
+// Call directly in class="" --> fw-100, fw-200, ....
+@each $i in $weight {
+    .fw-#{$i} {
+        font-weight: #{$i};
+    }
+}

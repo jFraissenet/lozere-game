@@ -1,8 +1,4 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view />
 </template>
 
@@ -25,6 +21,34 @@ nav {
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+
+html {
+  background-image: url("@/assets/ic_main_bg.jfif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #16171e;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 1220px) {
+  .view-container {
+    width: 64%;
+    margin-left: 18%;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1220px) {
+  .view-container {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media (max-width: 1019px) {
+  .view-container {
+    padding: 10px;
   }
 }
 </style>

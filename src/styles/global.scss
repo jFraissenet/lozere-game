@@ -1,0 +1,30 @@
+@use "@/styles/_colors.scss";
+@use "@/styles/_decoration.scss";
+@use "@/styles/_display.scss";
+@use "@/styles/_height.scss";
+@use "@/styles/_width.scss";
+@use "@/styles/_size.scss";
+
+.app-container {
+  font-family: "Roboto";
+}
+
+.ag-dialog-container {
+  @extend .bg-primary;
+  @extend .pd-g-5;
+  width: 100%;
+  height: 70vh;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}

@@ -1,0 +1,49 @@
+.m-display {
+  display: flex;
+}
+
+.m-display-c {
+  @extend .m-display;
+  @extend .m-txt-center;
+}
+
+.m-display-left {
+  @extend .m-display;
+  text-align: left;
+}
+
+.m-display-symetry {
+  @extend .m-display;
+  justify-content: space-around;
+}
+
+.m-display-center {
+  @extend .m-display;
+  justify-content: center;
+}
+
+.m-display-left {
+  @extend .m-display-left;
+  justify-content: left;
+}
+
+.m-display-between {
+  @extend .m-display;
+  justify-content: space-between;
+}
+
+.m-reset-link {
+  text-decoration: none;
+}
+
+.m-txt-center {
+  text-align: center;
+}
+
+.m-txt-left {
+  text-align: left;
+}
+
+.m-txt-right {
+  text-align: right;
+}
